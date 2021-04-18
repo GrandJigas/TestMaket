@@ -36,10 +36,22 @@ jQuery(document).ready(() => {
       $(".sidebar").parent().find(".curtain-bg").remove();
     } else {
       let curtain = $("<div></div>").addClass("curtain-bg");
+      curtain.on("click", function () {
+        $(".sidebar").toggleClass("active");
+        $(".header-burger").toggleClass("active");
+        $(this).remove();
+      })
+
       $(".sidebar").parent().append(curtain);
     }
     
     $(this).toggleClass("active");
     $(".sidebar").toggleClass("active");
+  });
+
+
+  // отпкрывает поисковую форму в шапке
+  $(".header-search-form-mini").on("click", function() {
+    $(".header-search-form .search-form").toggleClass("active")
   });
 });

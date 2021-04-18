@@ -121,6 +121,7 @@ header {
     margin-left: auto;
 
     transition: background 0.5s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: rgb(65, 77, 105);
@@ -292,9 +293,33 @@ header {
   }
 
   .header-search-form {
+    position: relative;
     margin-right: 0;
+
     .search-form {
       display: none;
+      position: absolute;
+      right: 10px;
+
+      &.active {
+        display: block;
+        top: 40px;
+        z-index: 1;
+        box-shadow: 1px 1px 3px rgba(97, 97, 97, 0.699);
+        animation: 0.5s ease 0s alternate show-search-form;
+      }
+    }
+
+    @keyframes show-search-form {
+      from {
+        top: 30px;
+        opacity: 0;
+      }
+
+      to {
+        top: 40px;
+        opacity: 1;
+      }
     }
   }
 
@@ -311,6 +336,12 @@ header {
 
 // -------------- 320px ---------------------
 @media all and (max-width: 575px) {
+  .header-search-form {
+    .search-form {
+      right: -15px;
+      width: 275px;
+    }
+  }
   .header-burger {
     margin-left: 0;
   }

@@ -315,11 +315,24 @@
         }
       }
     }
+    &-body {
+      margin: 0;
+    }
   }
 
   .content .card {
     &-preview {
-      padding: 2px;
+      padding: 0;
+
+      &:nth-child(2n + 1) {
+        padding-right: 2px;
+        margin-bottom: 4px;
+      }
+
+      &:nth-child(2n) {
+        padding-left: 2px;
+        margin-bottom: 4px;
+      }
 
       &__body {
         padding: 5px;
