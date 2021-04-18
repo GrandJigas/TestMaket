@@ -1388,3 +1388,8 @@ main {
     margin: 0 10px;
   }
 }
+@media all and (max-width: 575px) {
+  main {
+    margin: 0;
+  }
+}

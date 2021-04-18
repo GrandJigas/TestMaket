@@ -108,6 +108,13 @@ main {
   }
 }
 
+// -------------- 320px ---------------------
+@media all and (max-width: 575px) {
+  main {
+    margin: 0;
+  }
+}
+
 // -------------- 1200px ---------------------
 // @media all and (max-width: 1199px) {
 
