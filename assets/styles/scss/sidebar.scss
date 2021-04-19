@@ -1,0 +1,190 @@
+$sidebarBG: #f8f8f8;
+$sidebarMenuBG: #dddddd;
+$menuItemColor: #141414;
+$submenuItemColor: #444444;
+
+.sidebar {
+  font-family: $mainFont;
+  background-color: $sidebarBG;
+  width: 310px;
+  padding: 30px;
+  flex: 0 0 310px;
+
+  &-menu {
+    background-color: $sidebarMenuBG;
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      background-color: $sidebarBG;
+      list-style-type: none;
+
+      height: 50px;
+      margin-bottom: 1px;
+      padding-left: 15px;
+
+      text-decoration: none;
+
+      transition: background 0.5s ease;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        background-color: $sidebarMenuBG;
+      }
+
+      &-text {
+        font-size: 15px;
+        color: $menuItemColor;
+      }
+
+      &.collapse-item {
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          background-color: #1d2e57;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          width: 8px;
+          height: 3px;
+        }
+
+        &::before {
+          right: 19px;
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &-menu__item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &-submenu {
+    background: $sidebarBG;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    margin-bottom: 1px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      font-size: 13px;
+      text-decoration: none;
+      height: 26px;
+
+      &:hover &-text {
+        color: $BrandColor1;
+        font-weight: 500;
+
+        &::after {
+          background-color: $BrandColor1;
+          width: 100%;
+        }
+      }
+
+      &:hover &-marker {
+        &::after,
+        &::before {
+          background-color: $BrandColor1;
+        }
+      }
+
+      &-marker {
+        position: relative;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          width: 6px;
+          height: 2px;
+          background-color: $submenuItemColor;
+
+          transition: all 0.5s ease;
+        }
+
+        &:before {
+          margin-top: -2px;
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          margin-top: 1px;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &-text {
+        position: relative;
+        color: $submenuItemColor;
+        transition: all 0.5s ease;
+
+        &::after {
+          content: "";
+          background-color: $submenuItemColor;
+          position: absolute;
+          left: 0%;
+          bottom: 0;
+          width: 0;
+          height: 1px;
+          transition: all 0.5s ease;
+        }
+      }
+
+      &-last {
+        text-transform: uppercase;
+
+        ::after {
+          display: none;
+        }
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// -------------- 1200px ---------------------
+@media all and (max-width: 1679px) {
+  .sidebar {
+    width: 260px;
+    padding: 20px;
+    flex: 0 0 260px;
+  }
+}
+
+// -------------- 998px ---------------------
+@media all and (max-width: 1199px) {
+  .sidebar {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    left: -260px;
+
+    transition: left 0.8s ease;
+
+    &.active {
+      left: 0px;
+    }
+  }
+}
