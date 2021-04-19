@@ -280,6 +280,7 @@
       </div>
     </header>
 
+    <!-- Оберка основного контнента и навигации -->
     <div class="main-wrapper d-flex">
       <aside class="sidebar">
         <nav class="sidebar-menu">
@@ -411,6 +412,7 @@
       </aside>
 
       <main>
+        <!-- Сортировка контента -->
         <div class="sort-bar d-flex justify-content-between">
           <div class="sort-bar__toogle-buttons d-flex">
             <div class="sort-bar__trigger d-flex align-items-center">
@@ -471,9 +473,12 @@
           </div>
         </div>
 
+        <!-- Промежуточная линия -->
         <div class="line-space"></div>
 
+        <!-- Верхний контент -->
         <div class="content content-main-top">
+          <!-- Шапка контента -->
           <div class="content-header d-flex justify-content-between">
             <div class="content-header__title d-flex align-items-center">
               <span
@@ -490,6 +495,7 @@
             </div>
           </div>
 
+          <!-- Тело контента -->
           <div class="content-body">
             <div class="card-preview hit hd film">
               <div class="card-preview__wrapper">
@@ -538,19 +544,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                          title="Сериал обновляется"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -600,21 +700,116 @@
                     />
                   </a>
                 </div>
+
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Криминал, Драма, Боевик, Вестерн</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -664,21 +859,116 @@
                     />
                   </a>
                 </div>
+
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Криминал, Драма, Боевик, Вестерн</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -730,19 +1020,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -794,19 +1178,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -858,19 +1336,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -923,19 +1495,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -987,19 +1653,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1051,19 +1811,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1115,19 +1969,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1179,19 +2127,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                          title="Сериал обновляется"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1241,21 +2283,116 @@
                     />
                   </a>
                 </div>
+
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Криминал, Драма, Боевик, Вестерн</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1305,21 +2442,116 @@
                     />
                   </a>
                 </div>
+
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Криминал, Драма, Боевик, Вестерн</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1371,19 +2603,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1435,19 +2761,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1499,19 +2919,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1564,19 +3078,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1628,19 +3236,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1692,19 +3394,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1756,19 +3552,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1779,6 +3669,7 @@
           </div>
         </div>
 
+        <!-- Слайдер -->
         <div class="main-slider slider">
           <div
             id="carouselExampleControls"
@@ -1838,6 +3729,7 @@
           </div>
         </div>
 
+        <!-- Нижний контент -->
         <div class="content content-main-bottom">
           <div class="content-header d-flex justify-content-between">
             <div class="content-header__title d-flex align-items-center">
@@ -1897,19 +3789,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                          title="Сериал обновляется"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -1959,21 +3945,116 @@
                     />
                   </a>
                 </div>
+
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Криминал, Драма, Боевик, Вестерн</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2023,21 +4104,116 @@
                     />
                   </a>
                 </div>
+
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Криминал, Драма, Боевик, Вестерн</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2089,19 +4265,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2153,19 +4423,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2217,19 +4581,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2282,19 +4740,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2346,19 +4898,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2410,19 +5056,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -2474,19 +5214,113 @@
                 </div>
                 <div class="card-preview__body">
                   <div class="card-preview__basic-description">
-                    <div class="card-preview__movie-name">Опасный соблазн</div>
+                    <div class="card-preview__movie-name">
+                      <span class="name">Опасный соблазн</span>
+                      <span class="update-date">Обновлено: 25 марта 2021</span>
+                    </div>
                     <div class="card-preview__series">
-                      <span class="season">Сезон 4</span> /
-                      <span class="series">Серия 9</span>
+                      <div class="series-now">
+                        <span class="season">Сезон 4</span> /
+                        <span class="series">Серия 9</span>
+                      </div>
+                      <div class="status-update">
+                        <span class="text">Обновляется </span>
+                        <span
+                          title="Сериал обновляется"
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="mdi:refresh"
+                        ></span>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card-preview__additional-description">
                     <div class="release">
                       <span class="year">2019</span>,
-                      <span class="country">США</span>
+                      <span class="original-title">Original Title</span>
+
+                      <div class="categories">
+                        <div class="country">
+                          <span class="title">Страна: </span
+                          ><span class="text">США</span>
+                        </div>
+                        <div class="genres">
+                          <span class="title">Жанры: </span
+                          ><span class="text">Триллер</span>
+                        </div>
+                        <div class="roles">
+                          <span class="title">В ролях: </span
+                          ><span class="text"
+                            >Мартин Фриман, Дэйзи Хаггард, Алан Армстронг,
+                            Джордж Уэйкман, Джайда Эйлс</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <div class="genre">Триллер</div>
+                  </div>
+
+                  <div class="card-preview__rating">
+                    <div class="imdb">
+                      <div class="title">IMDb</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.9</span>
+                      </div>
+                    </div>
+
+                    <div class="kinopoisk">
+                      <div class="title">Kinkpoisk</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">8.1</span>
+                      </div>
+                    </div>
+
+                    <div class="local">
+                      <div class="title">Локальный</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.4</span>
+                      </div>
+                    </div>
+
+                    <div class="user-mark">
+                      <div class="title">Моя оценка</div>
+                      <div class="rating">
+                        <span
+                          class="iconify"
+                          data-inline="false"
+                          data-icon="ant-design:star-filled"
+                        ></span>
+                        <span class="text">7.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-preview__toggle-btn">
+                    <span
+                      class="iconify watched active"
+                      data-inline="false"
+                      data-icon="mdi:eye-outline"
+                    ></span>
+                    <span
+                      class="iconify favorite"
+                      data-inline="false"
+                      data-icon="eva:heart-outline"
+                    ></span>
                   </div>
                 </div>
               </div>
