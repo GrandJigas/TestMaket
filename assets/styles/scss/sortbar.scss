@@ -1,0 +1,232 @@
+.sort-bar {
+  display: flex;
+  font-family: $mainFont;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  &__trigger {
+    &-button {
+      width: 58px;
+      height: 36px;
+
+      background: #e8e8e8;
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 18px;
+
+      position: relative;
+      cursor: pointer;
+
+      &-circle {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #fff;
+
+        position: absolute;
+        top: 4px;
+        right: 4px;
+
+        transition: all 0.7s ease;
+
+        &::after {
+          content: "";
+
+          background-color: #b2b2b2;
+          width: 18px;
+          height: 18px;
+
+          border-radius: 50%;
+
+          position: absolute;
+          left: 5px;
+          top: 5px;
+
+          transition: all 0.7s ease;
+        }
+      }
+
+      &.active .sort-bar__trigger-button-circle {
+        right: 25px;
+        &::after {
+          background-color: $BrandColor1;
+        }
+      }
+    }
+
+    &-label {
+      font-size: 13px;
+      color: #494949;
+      margin-left: 10px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__card-style {
+    margin-left: 40px;
+
+    & > div {
+      width: 44px;
+      height: 44px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+      border-radius: 4px;
+
+      transition: all 0.1s ease;
+
+      &.active {
+        background-color: $BrandColor1;
+
+        .iconify {
+          color: white;
+        }
+      }
+
+      .iconify {
+        color: #c4c4c4;
+      }
+    }
+  }
+
+  &__card-line {
+    .iconify {
+      font-size: 24px;
+    }
+  }
+
+  &__card-average {
+    .iconify {
+      margin-top: 2px;
+      font-size: 32px;
+    }
+  }
+
+  &__card-small {
+    font-size: 30px;
+  }
+
+  &__filter {
+    color: #8e8e8e;
+    font-size: 14px;
+
+    &-categories {
+      padding: 17px 20px;
+    }
+
+    &-name {
+      color: $BrandColor1;
+      margin-left: 4px;
+      cursor: pointer;
+
+      &.active {
+        .arrow::before {
+          transform: rotate(-45deg);
+        }
+        .arrow::after {
+          transform: rotate(45deg);
+        }
+      }
+
+      .arrow {
+        height: 18px;
+        width: 18px;
+        margin-left: 10px;
+        position: relative;
+      }
+
+      .arrow::after,
+      .arrow::before {
+        content: "";
+        background-color: #6d6d6d;
+
+        width: 5px;
+        height: 2px;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        transition: all 0.4s ease;
+      }
+      .arrow::before {
+        left: calc(50% - 3px);
+        transform: rotate(45deg);
+      }
+      .arrow::after {
+        left: 50%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+// -------------- 1200px ---------------------
+@media all and (max-width: 1679px) {
+  .sort-bar {
+    font-family: $mainFont;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    &__card-style {
+      margin-left: 20px;
+    }
+  }
+}
+
+// -------------- 768px ---------------------
+@media all and (max-width: 997px) {
+  .sort-bar {
+    font-family: $mainFont;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .sort-bar__trigger-label {
+    font-size: 12px;
+    br {
+      display: inline;
+    }
+  }
+
+  .sort-bar__filter-categories {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sort-bar__filter-way-add {
+    .sort-bar__filter-label {
+      display: none;
+    }
+  }
+}
+
+// -------------- 576px ---------------------
+@media all and (max-width: 767px) {
+  .sort-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+
+    &__card-line {
+      display: none !important;
+    }
+
+    &__filter {
+      font-size: 12px;
+
+      &-name {
+        .arrow {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
